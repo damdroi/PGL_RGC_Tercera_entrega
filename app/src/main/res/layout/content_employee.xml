@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".EmployeeActivity"
+    tools:showIn="@layout/activity_employee">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TextInputLayoutId"
+        android:layout_width="353dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/TextInputEditTextId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Id"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TextInputLayoutIdentification"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/TextInputLayoutId"
+        app:layout_constraintStart_toStartOf="@+id/TextInputLayoutId"
+        app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutId">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/TextInputEditTextIdentification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/identification" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TextInputLayoutName"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/TextInputLayoutIdentification"
+        app:layout_constraintStart_toStartOf="@+id/TextInputLayoutIdentification"
+        app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutIdentification">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/TextInputEditTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:inputType="textCapWords" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TextInputLayoutSurname"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/TextInputLayoutName"
+        app:layout_constraintStart_toStartOf="@+id/TextInputLayoutName"
+        app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutName">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/TextInputEditTextSurnames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/surnames"
+            android:inputType="textCapWords" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TextInputLayoutHome"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/TextInputLayoutSurname"
+        app:layout_constraintStart_toStartOf="@+id/TextInputLayoutSurname"
+        app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutSurname">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/TextInputEditTextHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/home" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TextInputLayoutCountry"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/TextInputLayoutHome"
+        app:layout_constraintStart_toStartOf="@+id/TextInputLayoutHome"
+        app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutHome">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/TextInputEditTextCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Country"
+            android:inputType="number" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TextInputLayoutOrderingAccount"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/TextInputLayoutCountry"
+        app:layout_constraintStart_toStartOf="@+id/TextInputLayoutCountry"
+        app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutCountry">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/TextInputEditTextOrderingAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ordering_account" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TextInputLayoutProfile"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/TextInputLayoutOrderingAccount"
+        app:layout_constraintStart_toStartOf="@+id/TextInputLayoutOrderingAccount"
+        app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutOrderingAccount">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/TextInputEditTextProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Profile"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TextInputLayoutPersonalAmount"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/TextInputLayoutProfile"
+        app:layout_constraintStart_toStartOf="@+id/TextInputLayoutProfile"
+        app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutProfile">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/TextInputEditTextPersonalAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/personal_amount"
+            android:inputType="numberDecimal" />
+    </android.support.design.widget.TextInputLayout>
+
+</android.support.constraint.ConstraintLayout>

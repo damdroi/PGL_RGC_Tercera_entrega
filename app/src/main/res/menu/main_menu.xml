@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_launcher_country"
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="always"
+        android:title="@string/launcher_country" />
+    <item
+        android:id="@+id/menu_launcher_agreement"
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="always"
+        android:title="@string/launcher_agreement" />
+    <item
+        android:id="@+id/menu_launcher_profile"
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="ifRoom"
+        android:title="@string/launcher_profile" />
+    <item
+        android:id="@+id/menu_launcher_employee"
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="ifRoom"
+        android:title="@string/launcher_employee" />
+
+</menu>
